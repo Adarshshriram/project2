@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Tooplate's Little Fashion - Sign In Page</title>
+        <title>Tooplate's Little Fashion - Products</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,7 +22,6 @@
         <link rel="stylesheet" href="css/slick.css"/>
 
         <link href="css/tooplate-little-fashion.css" rel="stylesheet">
-        
 <!--
 
 Tooplate 2127 Little Fashion
@@ -42,40 +41,228 @@ https://www.tooplate.com/view/2127-little-fashion
     
         <main>
 
-            <section class="sign-in-form section-padding">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Little</span> Fashion</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                        <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Story</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="products.html">Products</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="faq.html">FAQs</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                            <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <header class="site-header section-padding d-flex justify-content-center align-items-center">
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-8 mx-auto col-12">
+                        <div class="col-lg-10 col-12">
+                            <h1>
+                                <span class="d-block text-primary">Choose your</span>
+                                <span class="d-block text-dark">favorite stuffs</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-                            <h1 class="hero-title text-center mb-5">Sign In</h1>
+            <section class="products section-padding">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            <h2 class="mb-5">New Arrivals</h2>
+                        </div>
 
-                            <div class="row">
-                                <div class="col-lg-8 col-11 mx-auto">
-                                    <form role="form" method="post">
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+                                <a href="product-detail.html">
+                                    <img src="images/product/evan-mcdougall-qnh1odlqOmk-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                </a>
 
-                                        <div class="form-floating mb-4 p-0">
-                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+                                <div class="product-top d-flex">
+                                    <span class="product-alert me-auto">New Arrival</span>
 
-                                            <label for="email">Email address</label>
-                                        </div>
+                                    <a href="#" class="bi-heart-fill product-icon"></a>
+                                </div>
 
-                                        <div class="form-floating p-0">
-                                            <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="product-detail.html" class="product-title-link">Tree pot</a>
+                                        </h5>
 
-                                            <label for="password">Password</label>
-                                        </div>
+                                        <p class="product-p">Original package design from house</p>
+                                    </div>
 
-                                        <button type="submit" class="btn custom-btn form-control mt-4 mb-3">
-                                            Sign in
-                                        </button>
-
-                                        <p class="text-center">Don’t have an account? <a href="sign-up.html">Create One</a></p>
-
-                                    </form>
+                                    <small class="product-price text-muted ms-auto">$25</small>
                                 </div>
                             </div>
-                            
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+                                <a href="product-detail.html">
+                                    <img src="images/product/jordan-nix-CkCUvwMXAac-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <span class="product-alert">Discounted Price</span>
+
+                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="product-detail.html" class="product-title-link">Fashion set</a>
+                                        </h5>
+
+                                        <p class="product-p">Costume package</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto">$35</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="product-thumb">
+                                <a href="product-detail.html">
+                                    <img src="images/product/nature-zen-3Dn1BZZv3m8-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="product-detail.html" class="product-title-link">Juice Drinks</a>
+                                        </h5>
+
+                                        <p class="product-p">Nature made another world</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto">$45</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <h2 class="mb-5">Popular</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+                                <a href="product-detail.html">
+                                    <img src="images/product/team-fredi-8HRKoay8VJE-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <span class="product-alert">Trending</span>
+
+                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="product-detail.html" class="product-title-link">Package</a>
+                                        </h5>
+
+                                        <p class="product-p">Original package design from house</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto">$50</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+                                <a href="product-detail.html">
+                                    <img src="images/product/quokkabottles-kFc1_G1GvKA-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="product-detail.html" class="product-title-link">Bottle</a>
+                                        </h5>
+
+                                        <p class="product-p">Package design</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto">$100</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 mb-3">
+                            <div class="product-thumb">
+                                <a href="product-detail.html">
+                                    <img src="images/product/anis-m-WnVrO-DvxcE-unsplash.jpeg" class="img-fluid product-image" alt="">
+                                </a>
+
+                                <div class="product-top d-flex">
+                                    <a href="#" class="bi-heart-fill product-icon ms-auto"></a>
+                                </div>
+
+                                <div class="product-info d-flex">
+                                    <div>
+                                        <h5 class="product-title mb-0">
+                                            <a href="product-detail.html" class="product-title-link">Medicine</a>
+                                        </h5>
+
+                                        <p class="product-p">Original design from house</p>
+                                    </div>
+
+                                    <small class="product-price text-muted ms-auto">$200</small>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
