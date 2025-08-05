@@ -1,0 +1,38 @@
+pipeline {
+    agent { label "projectA"}
+
+    stages {
+        stage('Git clone ') {
+            steps {
+                git branch: 'main', url: 'https://github.com/Adarshshriram/project2.git'
+            }
+        }
+        stage('docker Build ') {
+            steps {
+                sh 'docker build -t little_fashion_vin .'
+            }
+        }
+        stage('docker test ') {
+            steps {
+                sh 'docker test little_fashion_vin adhiadarsh/little_fashion_vin:1.0'
+            }
+        }
+        stage('docker deploy  ') {
+            steps {
+                sh 'docker stop little_fashion_conatiner || true'
+                sh 'docker rm little_fashion_conatiner || true'
+                sh 'docker run -d --name little_fashion_conatiner -p 81:80 adhiadarsh/little_fashion_vin'
+            }
+        }
+        stage('docker login   ') {
+            steps {
+                sh 'docker login -u adhiadarsh -p Adarsh@123'
+            }
+        }
+        stage('docker push    ') {
+            steps {
+                sh 'docker push adhiadarsh/little_fashion_vin:1.0'
+            }
+        }        
+    }
+}
