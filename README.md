@@ -10,7 +10,7 @@ This project demonstrates how to **automate the build and deployment** process o
 
 To set up a basic Jenkins pipeline that:
 - Builds the application
-- Runs tests (if applicable)
+- Runs tests
 - Deploys the application using Docker
 
 ---
@@ -20,7 +20,7 @@ To set up a basic Jenkins pipeline that:
 - Jenkins
 - Docker
 - GitHub
-- Linux (Jenkins Agent or Host)
+- Linux 
 
 ---
 
@@ -30,7 +30,7 @@ The pipeline includes the following stages:
 
 1. **Checkout** – Pulls code from GitHub
 2. **Build** – Builds the Docker image from `Dockerfile`
-3. **Test** – (Optional) Runs test commands if defined
+3. **Test** –  Runs test commands if defined
 4. **Deploy** – Runs the Docker container on a specific port
 
 ## How to Run
